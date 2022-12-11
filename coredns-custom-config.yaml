@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coredns-custom
+  namespace: kube-system
+data:
+  local.server: |
+    lan:53 {
+        forward . 10.98.76.1
+    }
+

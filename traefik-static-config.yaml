@@ -10,4 +10,12 @@ spec:
       minecraft: 
         port: 25565
         expose: true
-        exposedPort: 25565
+      bitcoind-p2p: 
+        port: 8333
+        expose: true
+      electrs:
+        port: 50001
+        expose: true
+      cln-p2p:
+        port: 9735
+        expose: true

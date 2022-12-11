@@ -1,0 +1,10 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: openebs-zfspv
+parameters:
+  poolname: "datapool/k3s"
+  fstype: "zfs"
+  thinprovision: "yes"
+provisioner: zfs.csi.openebs.io
+reclaimPolicy: Retain
